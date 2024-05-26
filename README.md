@@ -115,10 +115,63 @@ Dan hasilnya akan seperti ini :
 ![image](https://github.com/Heryantokurnia/Praktikum-4/assets/141998024/884ddeb8-5530-496d-ad03-43c5b2b60cae)
 
 ## TUGAS PRAKTIKUM 4 (TABEL HEWAN)
-1.	Tampilkan jumlah hewan yang dimiliki setiap owner.
+1.	Tampilkan jumlah hewan yang dimiliki setiap owner
 2.	Tampilkan jumlah hewan berdasarkan spesies
 3.	Tampilkan jumlah hewan berdasarkan jenis kelamin
 4.	Tampilkan jumlah hewan berdasarkan spesies dan jenis kelamin
 5.	Tampilkan jumlah hewan berdasarkan spesis (cat dan dog saja) dan jenis kelamin
 6.	Tampilkan jumlah hewan berdasarkan jenis kelamin yang diketahui saja
 
+PENJELASAN
+
+### 1. Tampilkan jumlah hewan yang dimiliki setiap owner
+
+Jawab :
+
+Untuk perintahnya bisa menggunkan perintah seperti ini :
+
+`SELECT owner, COUNT(*) AS Jumlah_hewan_setiap_owner FROM hewan GROUP BY owner; `
+
+Dan hasilnya akan seperti ini :
+
+![image](https://github.com/Heryantokurnia/Praktikum-4/assets/141998024/c2f79225-7d45-4015-b21c-53789b8a403e)
+
+### 2.	Tampilkan jumlah hewan berdasarkan spesies
+
+Jawab :
+
+Untuk perintahnya bisa menggunkan perintah seperti ini :
+
+`SELECT Species, COUNT(*) AS Jumlah_hewan_berdasarkan_Species FROM hewan GROUP BY Species; `
+
+Dan hasilnya akan seperti ini :
+
+![image](https://github.com/Heryantokurnia/Praktikum-4/assets/141998024/c7577f83-33aa-4bd2-85fc-f1353e0c1f63)
+
+### 3.	Tampilkan jumlah hewan berdasarkan jenis kelamin
+
+Jawab :
+
+Untuk perintahnya bisa menggunkan perintah seperti ini :
+
+`SELECT sex, COUNT(*) AS Jumlah_hewan_berdasarkan_jenis_kelamin FROM hewan GROUP BY sex; `
+
+Dan hasilnya akan seperti ini :
+
+![image](https://github.com/Heryantokurnia/Praktikum-4/assets/141998024/2dba9be5-ee55-4bf0-b742-b4231492f3d0)
+
+### 4.	Tampilkan jumlah hewan berdasarkan spesies dan jenis kelamin
+
+Jawab :
+
+Untuk perintahnya bisa menggunkan perintah seperti ini :
+
+` SELECT Species, COUNT(*) AS Jumlah_hewan_berdasarkan_Jenis_kelamin FROM hewan GROUP BY Species; `
+
+` SELECT sex, COUNT(*) AS Jumlah_hewan_berdasarkan_jenis_kelamin FROM hewan GROUP BY sex; `
+
+Dan hasilnya akan seperti ini :
+
+![image](https://github.com/Heryantokurnia/Praktikum-4/assets/141998024/6d43eed7-475a-4f37-b679-4894016bf3d3)
+
+![image](https://github.com/Heryantokurnia/Praktikum-4/assets/141998024/c61b58fa-b363-4a20-b0db-617614197290)
