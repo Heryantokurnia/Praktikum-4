@@ -166,12 +166,32 @@ Jawab :
 
 Untuk perintahnya bisa menggunkan perintah seperti ini :
 
-` SELECT Species, COUNT(*) AS Jumlah_hewan_berdasarkan_Jenis_kelamin FROM hewan GROUP BY Species; `
-
-` SELECT sex, COUNT(*) AS Jumlah_hewan_berdasarkan_jenis_kelamin FROM hewan GROUP BY sex; `
+` SELECT species, sex, COUNT(*) AS jumlah FROM hewan GROUP BY species, sex;  `
 
 Dan hasilnya akan seperti ini :
 
-![image](https://github.com/Heryantokurnia/Praktikum-4/assets/141998024/6d43eed7-475a-4f37-b679-4894016bf3d3)
+![sex and species](https://github.com/Heryantokurnia/Praktikum-4/assets/141998024/10627e1b-3f61-418f-8c6d-251791f97b28)
 
-![image](https://github.com/Heryantokurnia/Praktikum-4/assets/141998024/c61b58fa-b363-4a20-b0db-617614197290)
+### 5.	Tampilkan jumlah hewan berdasarkan spesis (cat dan dog saja) dan jenis kelamin
+
+Jawab :
+
+Untuk perintahnya bisa menggunkan perintah seperti ini :
+
+` SELECT species, sex, COUNT(*) AS jumlah FROM hewan WHERE species IN ('cat', 'dog') GROUP BY species, sex;  `
+
+Dan hasilnya akan seperti ini :
+
+![image](https://github.com/Heryantokurnia/Praktikum-4/assets/141998024/2c3dc657-a23a-4053-befe-1e91a888b8cc)
+
+### 6.	Tampilkan jumlah hewan berdasarkan jenis kelamin yang diketahui saja
+
+Jawab :
+
+Untuk perintahnya bisa menggunkan perintah seperti ini :
+
+` SELECT sex, COUNT(*) AS jumlah FROM hewan GROUP BY sex;   `
+
+Dan hasilnya akan seperti ini :
+
+![image](https://github.com/Heryantokurnia/Praktikum-4/assets/141998024/e1ccaba2-de53-4839-8ee6-be25e869a72d)
